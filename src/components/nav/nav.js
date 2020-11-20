@@ -2,7 +2,8 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { VscHome , VscGithub } from "react-icons/vsc";
-import { RiLinkedinFill , RiFacebookFill, RiGithubLine, RiTwitterFill } from "react-icons/ri";
+import { RiLinkedinFill , RiFacebookFill, RiGithubLine, RiTwitterFill, RiDiscordFill } from "react-icons/ri";
+import { SiDiscord } from "react-icons/si";
 import {
     Route,
     Link,
@@ -14,9 +15,10 @@ import aboutPage from '../../pages/about/about.js';
 import projectsPage from '../../pages/projects/projects.js';
 
 
-const Navigation = (prop) => {
+const Navigation = () => {
     // turn into a hamburger menu when in mobile
     // fix responsive issues
+    // decide what icons and contact info to add 
     return (
             <div>
                 <Router>
@@ -54,6 +56,9 @@ const Navigation = (prop) => {
                         <Nav.Link>
                             <Link to="/contact"><RiTwitterFill/></Link>
                         </Nav.Link>
+                        <Nav.Link>
+                            <Link to="/contact"><SiDiscord/></Link>
+                        </Nav.Link>
                     </Nav>
                     </Navbar>
 
@@ -63,7 +68,6 @@ const Navigation = (prop) => {
                     <Route path="/contact" component={contactPage}/>
                     <Route path="/about" component={aboutPage}/>
                     <Route path="/projects" component={projectsPage}/>
-
                 </Router>
             </div>
     );

@@ -8,30 +8,33 @@ import { MdEmail } from "react-icons/md";
 
 
 const contactPage = (prop) => {
-    // TODO: Fix line spacing 
+    // TODO: Fix media queries
     // TODO: Lots of custom CSS
     return (
         <div>
-            <h2>Contact Me</h2>
-            <p>Feel Free to Contact Me Any Time</p>
+            <Container className="mx-auto">
+                <h2>Contact Me</h2>
+                <p>Feel Free to Contact Me Any Time</p>
+            </Container>
 
             <Container>
 
                 <Row>
-                    <Col className="bg-light" xs={12} md={8}>
+                    <Col className="bg-light" xs={{ order: 'first' }} md={6}>
                         <ContactForm />
                     </Col>
 
-                    <Col xs={6} md={4}>
+                    <Col xs={12} md={6}>
                         <h3>Let's talk about work!</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
                             took a galley of type and scrambled it to make a type specimen book.</p>
-                        <p><strong>Phone:</strong></p>
+                        <p className="mb-1"><strong>Phone:</strong></p>
                         <p><ImPhone className="text-primary"/> (801)-123-4567</p>
-                        <p><strong>Email:</strong></p>
+                        <p className="mb-1"><strong>Email:</strong></p>
                         <p><MdEmail className="text-primary"/> placeholder.dev@gmail.com</p>
                     </Col>
+
                 </Row>
 
             </Container>

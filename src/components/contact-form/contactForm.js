@@ -6,24 +6,20 @@ import { RiSendPlaneFill } from "react-icons/ri";
 const ContactForm = (props) => {
         // TODO: allow member to send email from here to my email
     return (
-        <Form>
+        <Form className="pt-3 pb-3">
             <Form.Group controlId="formGroupName">
-                {/* <Form.Label>Name</Form.Label> */}
                 <Form.Control type="Name" placeholder="Name" />
             </Form.Group>
 
             <Form.Group controlId="formGroupEmail">
-                {/* <Form.Label>Email</Form.Label> */}
                 <Form.Control type="Email" placeholder="Email" />
             </Form.Group>
 
             <Form.Group controlId="formGroupSubject">
-                {/* <Form.Label>Subject</Form.Label> */}
                 <Form.Control type="Subject" placeholder="Subject" />
             </Form.Group>
 
             <Form.Group controlId="formGroupTextarea">
-                {/* <Form.Label>Message</Form.Label> */}
                 <Form.Control as="textarea" placeholder="Message" rows={4} />
             </Form.Group>
 
