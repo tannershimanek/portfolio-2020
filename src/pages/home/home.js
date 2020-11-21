@@ -6,8 +6,6 @@ import { TiStarburstOutline } from "react-icons/ti";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import code1 from '../../images/code1.svg';
-import code2 from '../../images/code2.svg';
 import code3 from '../../images/code3.svg';
 
 
@@ -30,11 +28,9 @@ const homePage = () => {
                     </div>
                 </Col>
 
-                <Col>
+                <Col className="">
                 {/* <a href='https://www.freepik.com/vectors/design'>Design vector created by freepik - www.freepik.com</a> */}
-                {/* <img src={code1} style={{ height: '300px'}}/> */}
-                {/* <img src={code2} style={{ height: '300px'}}/> */}
-                <img src={code3} style={{ height: '300px'}}/>
+                <img src={code3} style={{ height: '300px'}} alt="dev-img"/>
                 </Col>
             </Row>
             </Container>
