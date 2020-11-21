@@ -12,7 +12,7 @@ const contactPage = (prop) => {
     // TODO: Lots of custom CSS
     return (
         <div>
-            <Container className="mx-auto">
+            <Container className="mx-auto mt-3">
                 <h2>Contact Me</h2>
                 <p>Feel Free to Contact Me Any Time</p>
             </Container>

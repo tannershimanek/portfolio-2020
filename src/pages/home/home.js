@@ -1,10 +1,14 @@
 import React from 'react';
 import CardSmall from '../../components/card-sm/card-sm.js';
+import CardMedium from '../../components/card-md/card-md.js'
 import { VscAccount, VscFileCode } from "react-icons/vsc";
 import { TiStarburstOutline } from "react-icons/ti";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import code1 from '../../images/code1.svg';
+import code2 from '../../images/code2.svg';
+import code3 from '../../images/code3.svg';
 
 
 
@@ -12,28 +16,45 @@ const homePage = () => {
 
     return (
         <div>
-            <Container className="mx-auto">
+            <Container className="mx-auto mt-3">
                 <h2>Home Page</h2>
                 <p>This site is under construction and im too lazy to make a new git branch.</p>
             </Container>
-            
 
-            <Container className="mw-25">
+            <Container >
+            <Row className="py-3 bg-light">
+                <Col>
+                    <div className="text-center">
+                    <h2>Tanner Shimanek</h2>
+                    <p>This site is under construction and im too lazy to make a new git branch.</p>
+                    </div>
+                </Col>
+
+                <Col>
+                {/* <a href='https://www.freepik.com/vectors/design'>Design vector created by freepik - www.freepik.com</a> */}
+                {/* <img src={code1} style={{ height: '300px'}}/> */}
+                {/* <img src={code2} style={{ height: '300px'}}/> */}
+                <img src={code3} style={{ height: '300px'}}/>
+                </Col>
+            </Row>
+            </Container>
+            
+            <Container className="h-25 mt-5">
                 <Row>
-                    <Col>
+                    <Col sm className="mb-2">
                         <a href="/projects">
                         <CardSmall 
                             icon={<VscAccount />}
                             info='Projects'/>
                         </a>
                     </Col>
-                    <Col>
+                    <Col className="mb-2">
                         <CardSmall 
                             icon={<VscFileCode />}
                             info='Skills'
                             />
                     </Col>
-                    <Col>
+                    <Col sm className="mb-2" >
                         <CardSmall 
                             color={'text-primary'}
                             icon={<TiStarburstOutline />}
@@ -43,7 +64,34 @@ const homePage = () => {
                 </Row>
             </Container>
 
-            <Container className="mt-5">
+            <Container className="mx-auto mt-5 mb-3 h-100">
+                <Row>
+                    <Col md>
+                        <h4>Experience</h4>
+                            <CardMedium 
+                                info={
+                                <div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                </div>
+                                }
+                            />
+                    </Col>
+                    <Col md>
+                        <h4>My Education</h4>
+                            <CardMedium 
+                                info={
+                                    <div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    </div>
+                                    }
+                            />
+                    </Col>
+                </Row>
+            </Container>
+
+            <Container className="mx-auto">
                 <h3>Some info</h3>
                 <p className="ml-2 ml-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
