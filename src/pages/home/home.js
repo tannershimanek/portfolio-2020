@@ -68,11 +68,13 @@ const homePage = () => {
                             />
                     </Col>
                     <Col sm className="mb-2" >
+                        <a href='/skills'>
                         <CardSmall 
                             color={'text-primary'}
                             icon={<TiStarburstOutline />}
                             info='Experience'
                             />
+                        </a>
                     </Col>
                 </Row>
             </Container>

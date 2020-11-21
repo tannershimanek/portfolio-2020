@@ -3,10 +3,10 @@ import React from 'react';
 const projectsPage = () => {
 
     return (
-        <div>
-            <h1>Coming soon!</h1>
+        <div className="text-center">
+            <h1>Projects Page Coming Soon!</h1>
             <br />
-            <h1>Projects Page</h1>
+            <img src="https://media.giphy.com/media/PzmDzaJWu4RB3Kaqqv/giphy.gif"/>
         </div>
     );
 };

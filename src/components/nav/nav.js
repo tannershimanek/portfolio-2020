@@ -13,6 +13,7 @@ import homePage from '../../pages/home/home.js';
 import contactPage from '../../pages/contact/contact.js';
 import aboutPage from '../../pages/about/about.js';
 import projectsPage from '../../pages/projects/projects.js';
+import skillsPage from '../../pages/skills/skills.js';
 
 
 const Navigation = () => {
@@ -68,6 +69,7 @@ const Navigation = () => {
                     <Route path="/contact" component={contactPage}/>
                     <Route path="/about" component={aboutPage}/>
                     <Route path="/projects" component={projectsPage}/>
+                    <Route path="/skills" component={skillsPage}/>
                 </Router>
             </div>
     );

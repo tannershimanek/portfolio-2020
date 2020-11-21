@@ -3,10 +3,11 @@ import React from 'react';
 const aboutPage = () => {
 
     return (
-        <div>
-            <h1>Coming soon!</h1>
+        <div className="text-center">
+            <h1>About Page</h1>
             <br />
-            <h1>about page</h1>
+
+            <img src="https://media.giphy.com/media/Y4ak9Ki2GZCbJxAnJD/giphy.gif" />
         </div>
     );
 };
