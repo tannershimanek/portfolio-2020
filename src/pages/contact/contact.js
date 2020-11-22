@@ -10,6 +10,7 @@ import { MdEmail } from "react-icons/md";
 const contactPage = (prop) => {
     // TODO: Fix media queries
     // TODO: Lots of custom CSS
+    // maybe make the form message me on discord
     return (
         <div>
             <Container className="mx-auto mt-3">

@@ -24,7 +24,7 @@ const Navigation = () => {
             <div>
                 <Router>
 
-                    <Navbar expand="lg" variant="light" bg="light">
+                    <Navbar className="" expand="lg" variant="light" bg="">
                         {/* switch Navbar.Brand to Nav.link */}
                     <Navbar.Brand>
                             <Link to="/">Home</Link>
